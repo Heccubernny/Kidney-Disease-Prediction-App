@@ -97,15 +97,15 @@ input_data = pd.DataFrame(
 def show_result(prediction, prediction_probability):
     if prediction == 0:
         st.markdown(
-            "<span style='color:red'>Based on your provided details, you do not have a kidney disease.</span>",
+            "<span style='color:green'>Based on your provided details, you do not have a kidney disease.</span>",
             unsafe_allow_html=True,
         )
         st.markdown(
-            f"<span style='color:red'>The prediction accuracy is approximately {(prediction_probability[0][0])*100}%.</span>",
+            f"<span style='color:green'>The prediction accuracy is approximately {(prediction_probability[0][0])*100}%.</span>",
             unsafe_allow_html=True,
         )
         st.markdown(
-            "<span style='color:red'>Please consult with a healthcare professional for further guidance.</span>",
+            "<span style='color:green'>Please consult with a healthcare professional for further guidance.</span>",
             unsafe_allow_html=True,
         )
     else:
