@@ -41,7 +41,7 @@ with col1:
     pc = st.selectbox("Pus Cell", ["Normal", "Abnormal"])
     pcc = st.selectbox("Pus Cell Clumps", ["Present", "Not Present"])
     bgr = st.number_input("Blood Glucose Ratio", min_value=10.0, max_value=500.0)
-    bu = st.number_input("Blood Urea", min_value=0.0, max_value=200.0)
+    bu = st.number_input("Blood Urea", min_value=0.0, max_value=250.0)
 
 with col2:
     pcv = st.number_input("Packed Cell Volume", min_value=10.0, max_value=60.0)
