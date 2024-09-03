@@ -5,6 +5,8 @@ import pickle
 # Load the model
 loaded_model = pickle.load(open("kidney_model_2.pkl", "rb"))
 
+st.write(loaded_model)
+
 feature_names = [
     "age",
     "bp",
